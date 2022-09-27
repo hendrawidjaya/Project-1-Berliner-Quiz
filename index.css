@@ -1,1 +1,34 @@
 /* CSS Style */
+ 
+.cards {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    border-radius: 10px;
+    width: 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+  .card-img {
+    border-radius: 10px 10px 0 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://pixabay.com/photos/berlin-wall-graffiti-road-street-50730/");
+    height: 200px;
+    width: 100%;
+  }
+
+  .card-body {
+    padding: 10px 20px;
+  }
+
+  .card-question h3 {
+    text-align: center;
+  }
