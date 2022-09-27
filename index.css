@@ -1,4 +1,10 @@
 /* CSS Style */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
 .cards {
     margin-top: 10px;
     display: flex;
