@@ -1,11 +1,28 @@
 /* CSS Style */
- 
 .cards {
     margin-top: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
+
+/* #quiz {
+  display: flex;
+  justify-content: center;
+}
+  @media screen and (min-width: 600px) {
+    .cards {
+      max-width: 600px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .cards {
+      max-width: 900px;
+    }
+  }
+  */
+
 
   .card {
     border-radius: 10px;
@@ -14,13 +31,14 @@
     display: flex;
     flex-direction: column;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    min-width: 30%;
   }
   
   .card-img {
     border-radius: 10px 10px 0 0;
     background-size: cover;
     background-position: center;
-    background-image: url("https://pixabay.com/photos/berlin-wall-graffiti-road-street-50730/");
+    background-image: url("https://cdn.pixabay.com/photo/2012/06/25/15/41/berlin-wall-50730_960_720.jpg 1x, https://cdn.pixabay.com/photo/2012/06/25/15/41/berlin-wall-50730_1280.jpg");
     height: 200px;
     width: 100%;
   }
