@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 // JavaScript Section for Hamburger Navigation Bar //
 
 const hamburger = document.querySelector(".hamburger");
@@ -34,7 +32,5 @@ function vanish() {
 }
 
 // End Preloader //
-=======
 // JavaScript Section //
 alert("test");
->>>>>>> quizCardsDesign

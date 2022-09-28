@@ -4,7 +4,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-<<<<<<< HEAD
+
 .img {
   width: 9vh;
   padding-left: 20px;
@@ -156,7 +156,7 @@ h1 {
 background: linear-gradient(32deg, rgba(252,252,255,1) 0%, rgba(65,179,163,1) 83%);
   display: inline-block;
 }
-=======
+
 .cards {
     margin-top: 10px;
     display: flex;
@@ -217,4 +217,3 @@ background: linear-gradient(32deg, rgba(252,252,255,1) 0%, rgba(65,179,163,1) 83
   width: 100%;
   margin-top: 10px;
   }
->>>>>>> quizCardsDesign
