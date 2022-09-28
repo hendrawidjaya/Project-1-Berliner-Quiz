@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 // JavaScript Section for Hamburger Navigation Bar //
 
@@ -33,3 +34,7 @@ function vanish() {
 }
 
 // End Preloader //
+=======
+// JavaScript Section //
+alert("test");
+>>>>>>> quizCardsDesign
