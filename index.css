@@ -3,5 +3,133 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 16px;
+}
+.img {
+  width: 9vh;
+  padding-left: 20px;
+}
+
+
+
+html {
+  font-size: 62.5;
+  /* We should decide for a font */
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  border-bottom: 1px solid #e2e8f0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+/*Desktop Navigation Stle*/
+
+ul.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item {
+  margin: 1rem;
+  margin-right: 5rem;
+}
+.nav-link {
+  font: 1.6rem;
+  font-weight: 600;
+  color: #475569;
+  
+}
+.nav-link:hover {
+  color: #482ff7;
+}
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
+}
+/* Navigation Bar Transition from Mobile to Desktop*/
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding-left: 50px;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+}
+
+h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 300px;
+
+}
+.quiz {
+  padding: 10px;
+  width: 100%;
+  height: 50vh;
+  background: rgb(252,252,255);
+background: linear-gradient(32deg, rgba(252,252,255,1) 0%, rgba(65,179,163,1) 83%);
+  display: inline-block;
 }

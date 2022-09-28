@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <link>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./resources/css/index.css"/>
-    <link rel="icon" href="./assets/favicon.ico">
-    <title>Berliner quiz</title>
-  </head>
+<link>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="./resources/css/index.css" />
+<link rel="stylesheet" href="index.css">
+<link rel="icon" href="./assets/favicon.ico">
+<title>Berliner quiz</title>
+</head>
 
-  <body>
-    <header style="background: pink" onclick="handleClick(this)"> 
-      <nav class="header-nav">
-        <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#quiz">Quiz</a></li>
-        <li><a href="#about">About us</a></li>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="nav-logo"><img src="logo.png" alt="Our logo" class="img" /></a>
+     <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#quiz" class="nav-link">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About us</a>
+        </li>
       </ul>
-      </nav>
-      <i> website logo or title </i>
-    </header>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <script src="index.js"></script>
+  <main>
+    <section class="quiz">
+      <h1>Hello World</h1>
 
-    <main>
-      <section id="home"> </section>
-      <section id="quiz"> </section>
-      <section id="about"> </section>
-      </section>
-    </main>
+    </section>
+  </main>
 
-    <footer>
-      <nav class="footer-nav">
-        <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#quiz">Quiz</a></li>
-        <li><a href="#about">About us</a></li>
+  <footer>
+    <nav class="footer-nav">
+      <ul>
+
       </ul>
-      </nav>
-    </footer>
-    <script src="./resources/js/index.js"></script>
-  </body>
+    </nav>
+  </footer>
+  <script src="./resources/js/index.js"></script>
+</body>
 
 </html>
