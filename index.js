@@ -1,1 +1,2 @@
 // JavaScript Section //
+alert("test");
