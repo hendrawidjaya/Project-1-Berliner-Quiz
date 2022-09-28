@@ -8,8 +8,30 @@
   width: 9vh;
   padding-left: 20px;
 }
+/* Pre Loader */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: lightgrey;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.disappear {
+animation: vanish 3s forwards;
+}
+@keyframes vanish {
+  100%{
+      opacity: 0;
+      visibility: hidden;
+  }
+}
 
+/* End of preloader */
 
 html {
   font-size: 62.5;
