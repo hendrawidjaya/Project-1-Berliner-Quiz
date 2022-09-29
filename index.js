@@ -32,5 +32,5 @@ function vanish() {
 }
 
 // End Preloader //
+
 // JavaScript Section //
-alert("test");
