@@ -32,6 +32,7 @@ function vanish() {
 }
 
 // End Preloader //
+
 // JavaScript Section //
 
 let correctAnswersCountFromJS = 0;
