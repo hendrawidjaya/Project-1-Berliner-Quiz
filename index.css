@@ -14,7 +14,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgb(250, 208, 23);
+  background-color: rgb(19, 162, 167);
   height: 100%;
   width: 100%;
   display: flex;
@@ -141,13 +141,64 @@ ul.nav-menu {
 }
 }
 
-h1 {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  margin-top: 300px;
+/* How well do you know Berlin message */
 
+h1 {
+  font-size: clamp(3rem, 1vw, 10rem);
+  text-align: center;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
 }
+
+
+/* End How well do you know Berlin message */
+
+/* Let's Go! button */
+
+div, .button-start {
+  display: flex;
+  justify-content: center; 
+}
+
+.button-start {
+  background-color: rgb(55, 53, 53);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 52px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 36px;
+  font-family: 'Lucida Sans';
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* End Let's Go! button */
+
+
+/* First paragraph */
+
+.quiz>p {
+  color: whitesmoke;
+  font-family: 'Trebuchet MS';
+  font-size: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 4rem;
+  margin-bottom: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+/* End First paragraph */
+
 .quiz {
   padding: 10px;
   width: 100%;
