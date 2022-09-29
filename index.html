@@ -39,7 +39,6 @@
       </div>
     </nav>
   </header>
-  <script src="index.js"></script>
   <main>
     <section class="quiz">
       <h1>Hello World</h1>
@@ -66,18 +65,29 @@
     <section id="home"> </section>
 
     <section id="quiz">
-
+    
       <div class="cards">
         <div class="card">
           <div class="card-img"></div>
           <div class="card-body">
             <h3 class="card-question">What is your favourite place in Berlin?</h3>
-            <button class="card-button" id="rightAnswer">Answer 1</button>
-            <button class="card-button" id="wrongAnswer">Answer 2</button>
+            <button type="button" class="right quizButton">Answer 1</button>
+            <button type="button" class="wrong quizButton">Answer 2</button>
           </div>
         </div>
 
+        <div class="card">
+          <div class="card-img"></div>
+          <div class="card-body">
+            <h3 class="card-question">What is your favourite place in Lviv?</h3>
+            <button type="button" class="right quizButton">Tante Sophy</button>
+            <button type="button" class="wrong quizButton">Moto3aBoD</button>
+          </div>
+        </div>
       </div>
+
+      <button class="result" onclick="submitAnswers()">Get result</button>
+      <div id="totalCount"></div>
     </section>
 
 
@@ -95,7 +105,7 @@
       </ul>
     </nav>
   </footer>
-  <script src="./resources/js/index.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>

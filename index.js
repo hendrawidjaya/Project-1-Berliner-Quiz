@@ -33,4 +33,35 @@ function vanish() {
 
 // End Preloader //
 // JavaScript Section //
-alert("test");
+
+let correctAnswersCountFromJS = 0;
+
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+  card.addEventListener('click', function onClick(event) {
+    const targetElement = event.target;
+    if (targetElement.type === 'button' && !card.classList.contains('checked')) {
+
+      card.classList.add('checked');
+
+      targetElement.classList.add('selected');
+
+      if (targetElement.classList.contains('right')) {
+        correctAnswersCountFromJS++;
+      }
+    }
+  })
+})
+
+function submitAnswers() {
+  //DOM querySelector solution
+  const correctAnswersCountFromDom = document.querySelectorAll('.right.selected').length;
+  const solutionDOMCount = correctAnswersCountFromDom + " from " + cards.length;
+ 
+  //DOM JS solution
+  const solutionJSCount = correctAnswersCountFromJS + " from " + cards.length;
+
+  //Record result
+  document.getElementById('totalCount').innerHTML = solutionDOMCount;
+}

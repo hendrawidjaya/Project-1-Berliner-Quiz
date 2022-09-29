@@ -208,12 +208,42 @@ background: linear-gradient(32deg, rgba(252,252,255,1) 0%, rgba(65,179,163,1) 83
     text-align: center;
   }
 
-  .card-button {
+.quizButton {
   border: none;
   border-radius: 10px;
   height: 50px;
-  background-color: rgb(85, 223, 43);
+  background-color: rgb(48, 48, 48);
   text-align: center;
   width: 100%;
   margin-top: 10px;
   }
+
+  .right.selected {
+    background-color: green;
+  }
+
+  .wrong.selected {
+    background-color: rgb(128, 0, 0);
+  }
+
+  .result {
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    background-color: rgb(193, 180, 180);  
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+button {
+    cursor: pointer;
+}
+
+#totalCount {
+    font-size: 30px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
