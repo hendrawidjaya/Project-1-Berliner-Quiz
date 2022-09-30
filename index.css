@@ -205,6 +205,7 @@ div, .button-start {
 #quiz-wraper {
 display: flex;
 justify-content: center;
+  background-color: rgb(19, 162, 167);
 }
 
 
@@ -252,8 +253,8 @@ justify-content: center;
   display: flex;
   flex-direction: column;
   padding: 10px;
-  background-color:rgb(19, 162, 167);
-  color: white;
+  background-color:rgb(196, 240, 241);
+  color: rgb(3, 0, 0);
   text-align: center;
 }
 
