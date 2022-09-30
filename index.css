@@ -203,11 +203,10 @@ div, .button-start {
 /* cards with radiobuttons */
 
 #quiz-wraper {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
   background-color: rgb(19, 162, 167);
 }
-
 
 .main-container {
   border-radius: 10px;
