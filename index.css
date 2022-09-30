@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(19, 162, 167);
+}
+
 .img {
   width: 9vh;
   padding-left: 20px;
@@ -52,6 +56,7 @@ a {
   border-bottom: 1px solid #e2e8f0;
 }
 .navbar {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -238,6 +243,7 @@ div, .button-start {
   width: 100%;
 }
 
+/*
 .card-img2 {
   border-radius: 10px 10px 0 0;
   background-size: cover;
@@ -246,7 +252,7 @@ div, .button-start {
   height: 200px;
   width: 100%;
 }
-
+*/
 
 .quiz-header {
   display: flex;
@@ -258,7 +264,7 @@ div, .button-start {
 }
 
 
-ul {
+ul.radiobuttons {
   list-style-type: none;
   width: 100%;
   margin-top: 0px;
@@ -268,7 +274,7 @@ ul {
   color: white;
 }
 
-ul li {
+ul.radiobuttons li {
   font-size: 14px;
   margin: 10px;
   display: flex;
@@ -276,7 +282,7 @@ ul li {
   gap: 5px;
 }
 
-ul li label {
+ul.radiobuttons li.radio label {
   cursor: pointer;
 }
 
@@ -308,3 +314,4 @@ ul li label {
       max-width: 900px;
     }
   }
+
