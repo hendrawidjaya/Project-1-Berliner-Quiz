@@ -61,21 +61,36 @@
   <main>
     <section id="home"> </section>
 
-    <section id="quiz">
+    <section id="quiz-wraper"> 
 
-      <div class="cards">
-        <div class="card">
-          <div class="card-img"></div>
-          <div class="card-body">
-            <h3 class="card-question">What is your favourite place in Berlin?</h3>
-            <button class="card-button" id="rightAnswer">Answer 1</button>
-            <button class="card-button" id="wrongAnswer">Answer 2</button>
-          </div>
+      <div class="main-container">
+        <div class="quiz-container" id="quiz">
+          <div class="card-img1"></div>
+          <div class="quiz-header"><h3>What is your favourite place in Berlin?</h3></div>
+            <ul>
+              <li>
+                <input type="radio" name="answer" id="a" class="answer" />
+                <label for="a" id="a_text">Alexanderplatz</label>
+              </li>
+              <li>
+                <input type="radio" name="answer" id="b" class="answer" />
+                <label for="b" id="b_text">Potsdamer Platz</label>
+              </li>
+              <li>
+                <input type="radio" name="answer" id="c" class="answer" />
+                <label for="c" id="c_text">Tiergarten</label>
+              </li>
+              <li>
+                <input type="radio" name="answer" id="d" class="answer" />
+                <label for="d" id="d_text">Berlin mall</label>
+              </li>
+            </ul>
+          <button type="submit" class="btn">Submit</button>
+          <button type="submit" class="reloadbtn hide">Reload</button>
         </div>
-
       </div>
-    </section>
-
+    </div>
+  </section>
 
 
     <section id="about"> </section>
@@ -86,3 +101,7 @@
 </body>
 
 </html>
+
+
+
+
