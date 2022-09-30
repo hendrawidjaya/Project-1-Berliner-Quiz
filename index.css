@@ -199,71 +199,112 @@ div, .button-start {
 
 /* End First paragraph */
 
-.quiz {
-  padding: 10px;
-  width: 100%;
-  height: 1000px;
-  background-color: rgb(19, 162, 167);
-  display: inline-block;
+
+/* cards with radiobuttons */
+
+#quiz-wraper {
+display: flex;
+justify-content: center;
 }
 
-.cards {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-/* #quiz {
+
+.main-container {
+  border-radius: 10px;
+  margin: 20px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  min-width: 30%;
 }
-  @media screen and (min-width: 600px) {
-    .cards {
-      max-width: 600px;
-    }
-  }
 
-  @media screen and (min-width: 1024px) {
-    .cards {
-      max-width: 900px;
-    }
-  }
-  */
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+.card-img1 {
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://cdn.pixabay.com/photo/2012/06/25/15/41/berlin-wall-50730_960_720.jpg 1x, https://cdn.pixabay.com/photo/2012/06/25/15/41/berlin-wall-50730_1280.jpg");
+  height: 200px;
+  width: 100%;
+}
+
+.card-img2 {
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://cdn.pixabay.com/photo/2021/01/23/21/09/berlin-5943744_960_720.jpg");
+  height: 200px;
+  width: 100%;
+}
 
 
-  .card {
-    border-radius: 10px;
-    width: 200px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    min-width: 30%;
-  }
-  
-  .card-img {
-    border-radius: 10px 10px 0 0;
-    background-size: cover;
-    background-position: center;
-    background-image: url("https://cdn.pixabay.com/photo/2012/06/25/15/41/berlin-wall-50730_960_720.jpg 1x, https://cdn.pixabay.com/photo/2012/06/25/15/41/berlin-wall-50730_1280.jpg");
-    height: 200px;
-    width: 100%;
-  }
+.quiz-header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color:rgb(19, 162, 167);
+  color: white;
+  text-align: center;
+}
 
-  .card-body {
-    padding: 10px 20px;
-  }
 
-  .card-question h3 {
-    text-align: center;
-  }
+ul {
+  list-style-type: none;
+  width: 100%;
+  margin-top: 0px;
+  background-color:rgb(19, 162, 167);
+  padding-left: 75px;
+  border-radius: 0 0 10px 10px;
+  color: white;
+}
 
-  .card-button {
+ul li {
+  font-size: 14px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.btn {
+  display: block;
+  width: 75%;
   border: none;
   border-radius: 10px;
   height: 50px;
-  background-color: rgb(85, 223, 43);
+  background-color: rgb(55, 53, 53);
   text-align: center;
   width: 100%;
   margin-top: 10px;
+  color: white;
+}
+
+
+ @media screen and (min-width: 600px) {
+    .main-container {
+      max-width: 600px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .main-container {
+      max-width: 900px;
+    }
   }
