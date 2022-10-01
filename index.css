@@ -6,7 +6,10 @@
 }
 
 body {
-  background-color: rgb(19, 162, 167);
+  background-image: url(/assets/berlinbackground.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .img {
@@ -210,7 +213,6 @@ div, .button-start {
 #quiz-wraper {
   display: flex;
   justify-content: center;
-  background-color: rgb(19, 162, 167);
 }
 
 .main-container {
