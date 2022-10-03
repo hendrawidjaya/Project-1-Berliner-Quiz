@@ -300,6 +300,7 @@ div, .button-start {
   background-color:rgb(196, 240, 241);
   color: rgb(3, 0, 0);
   text-align: center;
+  width: 100%;
 }
 
 
@@ -345,12 +346,12 @@ ul.radiobuttons li.radio label {
 
  @media screen and (min-width: 600px) {
     .main-container {
-      max-width: 600px;
+      max-width: 700px;
     }
   }
   @media screen and (min-width: 1024px) {
     .main-container {
-      max-width: 900px;
+      max-width: 1000px;
     }
   }
 
