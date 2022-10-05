@@ -359,7 +359,7 @@ ul.radiobuttons li.radio label {
 
 .about-title {
  color: whitesmoke;
- position: absolute;
+ position: relative;
  justify-content: flex-start;
  padding:
 }
