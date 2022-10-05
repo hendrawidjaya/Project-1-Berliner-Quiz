@@ -273,7 +273,7 @@ div, .button-start {
   width: 1000px;
 }
 
-.card-img1 {
+.card-img {
   border-radius: 10px 10px 0 0;
   background-size: cover;
   background-position: center;
@@ -308,6 +308,7 @@ div, .button-start {
 ul.radiobuttons {
   list-style-type: none;
   width: 100%;
+  height: 140px;
   margin-top: 0px;
   background-color:rgb(19, 162, 167);
   padding-left: 75px;
@@ -367,8 +368,14 @@ ul.radiobuttons li.radio label {
  @media screen and (min-width: 600px) {
     .main-container {
       max-width: 700px;
-      font-size: x-large;}
-
+      font-size: x-large;
+    }
+    .card-img {
+      height: 375px;
+    }
+    ul.radiobuttons {
+      height: 165px;
+    }
     ul.radiobuttons li {
         font-size: 24px;
       }
@@ -385,6 +392,12 @@ ul.radiobuttons li.radio label {
     .main-container {
       max-width: 1000px;
       font-size: x-large;
+    }
+    .card-img {
+      height: 400px;
+    }
+    ul.radiobuttons {
+      height: 180px;
     }
     ul.radiobuttons li {
       font-size: 26px;
