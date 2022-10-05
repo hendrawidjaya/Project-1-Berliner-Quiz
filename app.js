@@ -5,6 +5,8 @@ const quizData = [
     b: "All ",
     c: "wild code club",
     correct: "b",
+    cardImage:
+      "https://images.pexels.com/photos/7245305/pexels-photo-7245305.jpeg?cs=srgb&dl=pexels-olga-lioncat-7245305.jpg&fm=jpg",
   },
   {
     question: "Wwhat is the tallest building in berlin ?",
@@ -51,7 +53,7 @@ const c = document.getElementById("c+");
 const btn = document.querySelector(".btn");
 const all_answer = document.querySelectorAll(".answer");
 const quizContainer = document.querySelector(".radiobuttons");
-const cardImage = document.querySelector(".card-img");
+const cardimage = document.querySelector(".card-img");
 
 let index = 0;
 let score = 0;
@@ -78,7 +80,8 @@ function getquiz() {
   a.innerText = quizData[index].a;
   b.innerText = quizData[index].b;
   c.innerText = quizData[index].c;
-  cardImage.innerHTML = quizData[index].cardImage;
+  cardimage.style.backgroundImage =
+    "https://images.pexels.com/photos/7245305/pexels-photo-7245305.jpeg?cs=srgb&dl=pexels-olga-lioncat-7245305.jpg&fm=jpg";
 }
 //move forward the quiz
 function startquiz() {

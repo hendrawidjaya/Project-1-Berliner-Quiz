@@ -303,11 +303,12 @@ ul.radiobuttons {
   width: 100%;
   height: 140px;
   margin-top: 0px;
-  background-color: rgb(19, 162, 167);
+  background-color: rgb(51, 133, 70);
   padding-left: 75px;
   border-radius: 0 0 10px 10px;
   color: white;
   font-family: "Trebuchet MS";
+  cursor: pointer;
 }
 
 ul.radiobuttons li {
@@ -317,6 +318,7 @@ ul.radiobuttons li {
   display: flex;
   align-items: center;
   gap: 5px;
+  /* cursor: pointer; */
 }
 
 ul.radiobuttons li.radio label {
