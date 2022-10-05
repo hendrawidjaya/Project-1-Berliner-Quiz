@@ -1,44 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <link>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./resources/css/index.css"/>
-    <link rel="icon" href="./assets/favicon.ico">
-    <title>Berliner quiz</title>
-  </head>
+<link>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="./resources/css/index.css" />
+<link rel="stylesheet" href="index.css">
+<link rel="icon" href="./assets/favicon.ico">
+<link rel="stylesheet" type="text/css" href="index.css" />
+<link rel="icon" href="/assets/favicon.ico">
+<title>Berliner Quiz</title>
+</head>
 
-  <body>
-    <header style="background: pink" onclick="handleClick(this)"> 
-      <nav class="header-nav">
-        <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#quiz">Quiz</a></li>
-        <li><a href="#about">About us</a></li>
+<body>
+  <!-- Loading Page-->
+
+
+  <div class="loader">
+    <img src="/assets/preloading.png">
+  </div>
+  <!--Nav Bar Menu-->
+
+
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="nav-logo"><img src="/assets/logo.png" alt="Our logo" class="img" /></a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#quiz" class="nav-link">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About us</a>
+        </li>
       </ul>
-      </nav>
-      <i> website logo or title </i>
-    </header>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <!-- Home Page -->
+  <section id="home"></section>
+  <script src="index.js"></script>
+  <main>
+    <section class="quiz">
 
-    <main>
-      <section id="home"> </section>
-      <section id="quiz"> </section>
-      <section id="about"> </section>
-      </section>
-    </main>
+      <h1>"How well do you know Berlin?"</h1>
 
-    <footer>
-      <nav class="footer-nav">
-        <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#quiz">Quiz</a></li>
-        <li><a href="#about">About us</a></li>
-      </ul>
-      </nav>
-    </footer>
-    <script src="./resources/js/index.js"></script>
-  </body>
+      <div>
+        <a href="#quiz" class="button-start">Let's Go!</a>
+      </div>
+
+      <p>
+        This quiz will test your knowledge
+        about our beloved city.
+        Click the button and find out!
+      </p>
+
+    </section>
+  </main>
+  <!-- Quiz Section-->
+
+
+
+  <main>
+    <section id="quiz"> </section>
+
+    <section id="quiz-wraper">
+
+      <div class="main-container">
+        <div class="quiz-container" id="quiz">
+         <div class="card-img"></div>
+          <div class="quiz-header">
+          <h3>What is your favourite place in Berlin?</h3></div>
+            <ul class="radiobuttons">
+              <li class="radio">
+                <input type="radio" name="answer" id="a" class="answer" />
+                <label for="a" id="a_text">Alexanderplatz</label>
+              </li>
+              <li>
+                <input type="radio" name="answer" id="b" class="answer" />
+                <label for="b" id="b_text">Potsdamer Platz</label>
+              </li>
+              <li>
+                <input type="radio" name="answer" id="c" class="answer" />
+                <label for="c" id="c_text">Tiergarten</label>
+              </li>
+              <li>
+                <input type="radio" name="answer" id="d" class="answer" />
+                <label for="d" id="d_text">Berlin mall</label>
+              </li>
+            </ul>
+          <button type="submit" class="btn">Submit</button>
+          <button type="submit" class="reloadbtn hide">Reload</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- About us section -->
+
+    <h1 class="about-title">About Us</h1>
+    <section class="about-us" id="about">
+
+      <div class="box">
+        <div class="imgBx">
+          <img src="assets/hendraphoto1.jpg" alt="hendra">
+        </div>
+        <div class="content">
+          <h2>Hendra Widjaya<br><span>Most Creative Developer</span></h2>
+          <p>GitHub: #hendrawidjaya
+            LinkedIn: Hendra Widjaya Dharma
+
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgBx">
+          <img src="assets/mullyphoto1.jpg" alt="mully">
+        </div>
+        <div class="content">
+          <h2>Muluget Birish<br><span>Most Creative Developer</span></h2>
+          <p>Github: #mulybirish
+            LinkedIn: Mulugeta Birish
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgBx">
+          <img src="assets/stefanphoto1.jpg" alt="stefan">
+        </div>
+        <div class="content">
+          <h2>Stefan Dascalescu<br><span>Most Creative Developer</span></h2>
+          <p>Github: #StefanDsd
+            LinkedIn: Stefan Dascalescu
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgBx">
+          <img src="assets/valeriaphoto1.jpg" alt="valeria">
+        </div>
+        <div class="content">
+          <h2>Valeria Kurylko<br><span>Most Creative Developer</span></h2>
+          <p>Github: #kurylko
+            LinkedIn: Valeria Kurylko
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./resources/js/index.js"></script>
+</body>
 
 </html>
