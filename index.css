@@ -301,6 +301,7 @@ div, .button-start {
   color: rgb(3, 0, 0);
   text-align: center;
   width: 100%;
+  font-family: 'Trebuchet MS';
 }
 
 
@@ -312,10 +313,12 @@ ul.radiobuttons {
   padding-left: 75px;
   border-radius: 0 0 10px 10px;
   color: white;
+  font-family: 'Trebuchet MS';
 }
 
 ul.radiobuttons li {
-  font-size: 14px;
+  font-size: 17px;
+  font-family: 'Trebuchet MS';
   margin: 10px;
   display: flex;
   align-items: center;
@@ -341,17 +344,57 @@ ul.radiobuttons li.radio label {
   width: 100%;
   margin-top: 10px;
   color: white;
+  font-family: 'Lucida Sans';
+  font-size: 26px;
+}
+
+.reloadbtn hide {
+  display: block;
+  width: 75%;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  background-color: rgb(55, 53, 53);
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  color: white;
+  font-family: 'Lucida Sans';
+  font-size: 26px;
 }
 
 
  @media screen and (min-width: 600px) {
     .main-container {
       max-width: 700px;
+      font-size: x-large;}
+
+    ul.radiobuttons li {
+        font-size: 24px;
+      }
+      .btn {
+        font-size: x-large;
+        width: 58%;
+      }
+      .reloadbtn {
+        font-size: x-large;
+      }
     }
-  }
+  
   @media screen and (min-width: 1024px) {
     .main-container {
       max-width: 1000px;
+      font-size: x-large;
+    }
+    ul.radiobuttons li {
+      font-size: 26px;
+    }
+    .btn {
+      font-size: 30px;
+      width: 38%;
+    }
+    .reloadbtn {
+      font-size: x-large;
     }
   }
 
