@@ -152,7 +152,7 @@ ul.nav-menu {
     top: 5rem;
     flex-direction: column;
     background-color: #fff;
-    width: 100%;
+    width: 10%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
@@ -171,6 +171,7 @@ ul.nav-menu {
   .hamburger {
     display: block;
     cursor: pointer;
+    padding-right: 20px;
   }
 
 .hamburger.active .bar:nth-child(2) {
@@ -426,8 +427,7 @@ ul.radiobuttons li.radio label {
 @media screen and (max-width: 768px) {
   .about-title {
     position: relative;
-
-  }
+}
   
 }
 .about-us {
@@ -445,11 +445,11 @@ ul.radiobuttons li.radio label {
 .box {
   position: relative;
   width: 300px;
-  height: 300px;
+  height: 350px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin: 60px;
+  margin: 75px;
   background: rgb(60, 202, 207);
   transition: 1s;
   
@@ -476,7 +476,7 @@ ul.radiobuttons li.radio label {
 .box:hover .imgBx img {
   opacity: 0.1;
 }
-.box::before {
+.box:before {
   content: '';
   position: absolute;
   top: -2px;
