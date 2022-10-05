@@ -146,7 +146,7 @@ ul.nav-menu {
     top: 5rem;
     flex-direction: column;
     background-color: #fff;
-    width: 10%;
+    width: 100%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
