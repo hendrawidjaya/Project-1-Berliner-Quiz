@@ -30,12 +30,12 @@ body {
 }
 
 .disappear {
-animation: vanish 3s forwards;
+  animation: vanish 3s forwards;
 }
 @keyframes vanish {
-  100%{
-      opacity: 0;
-      visibility: hidden;
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -44,7 +44,7 @@ animation: vanish 3s forwards;
 html {
   font-size: 62.5;
   scroll-behavior: smooth;
-  
+
   /* We should decide for a font */
 }
 li {
@@ -111,17 +111,14 @@ ul.nav-menu {
   font: 1.6rem;
   font-weight: 600;
   color: rgb(19, 162, 167);
-  
 }
 .nav-link:hover {
   transform: translateY(-5px);
   color: rgb(8, 8, 8);
-
 }
 .nav-link:hover:before {
   opacity: 1;
   transform: translateY(5px);
-
 }
 .nav-link:before {
   content: "";
@@ -130,14 +127,11 @@ ul.nav-menu {
   height: 120px;
   width: 150px;
   opacity: 0;
-  background: #E85a4f;
+  background: #e85a4f;
   transition: 1s all;
-  transition-delay: 0.10;
+  transition-delay: 0.1;
   background: radial-gradient
-  (ellipse at center , rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-
-  
-  
+    (ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
 }
 .nav-logo {
   font-size: 2.1rem;
@@ -152,7 +146,7 @@ ul.nav-menu {
     top: 5rem;
     flex-direction: column;
     background-color: #fff;
-    width: 100%;
+    width: 10%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
@@ -174,17 +168,17 @@ ul.nav-menu {
     padding-right: 20px;
   }
 
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
 
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
 
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
 
 /* How well do you know Berlin message */
@@ -201,14 +195,14 @@ h1 {
   margin-bottom: 50px;
 }
 
-
 /* End How well do you know Berlin message */
 
 /* Let's Go! button */
 
-div, .button-start {
+div,
+.button-start {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .button-start {
@@ -221,19 +215,18 @@ div, .button-start {
   text-decoration: none;
   display: inline-block;
   font-size: 36px;
-  font-family: 'Lucida Sans';
+  font-family: "Lucida Sans";
   margin: 4px 2px;
   cursor: pointer;
 }
 
 /* End Let's Go! button */
 
-
 /* First paragraph */
 
-.quiz>p {
+.quiz > p {
   color: whitesmoke;
-  font-family: 'Trebuchet MS';
+  font-family: "Trebuchet MS";
   font-size: 30px;
   margin-left: 100px;
   margin-right: 100px;
@@ -244,7 +237,6 @@ div, .button-start {
 }
 
 /* End First paragraph */
-
 
 /* Cards with radiobuttons */
 
@@ -299,33 +291,34 @@ div, .button-start {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  background-color:rgb(196, 240, 241);
+  background-color: rgb(196, 240, 241);
   color: rgb(3, 0, 0);
   text-align: center;
   width: 100%;
-  font-family: 'Trebuchet MS';
+  font-family: "Trebuchet MS";
 }
-
 
 ul.radiobuttons {
   list-style-type: none;
   width: 100%;
   height: 140px;
   margin-top: 0px;
-  background-color:rgb(19, 162, 167);
+  background-color: rgb(51, 133, 70);
   padding-left: 75px;
   border-radius: 0 0 10px 10px;
   color: white;
-  font-family: 'Trebuchet MS';
+  font-family: "Trebuchet MS";
+  cursor: pointer;
 }
 
 ul.radiobuttons li {
   font-size: 17px;
-  font-family: 'Trebuchet MS';
+  font-family: "Trebuchet MS";
   margin: 10px;
   display: flex;
   align-items: center;
   gap: 5px;
+  /* cursor: pointer; */
 }
 
 ul.radiobuttons li.radio label {
@@ -347,8 +340,9 @@ ul.radiobuttons li.radio label {
   width: 100%;
   margin-top: 10px;
   color: white;
-  font-family: 'Lucida Sans';
+  font-family: "Lucida Sans";
   font-size: 26px;
+  cursor: pointer;
 }
 
 .reloadbtn hide {
@@ -362,64 +356,62 @@ ul.radiobuttons li.radio label {
   width: 100%;
   margin-top: 10px;
   color: white;
-  font-family: 'Lucida Sans';
+  font-family: "Lucida Sans";
   font-size: 26px;
 }
 
-
- @media screen and (min-width: 600px) {
-    .main-container {
-      max-width: 700px;
-      font-size: x-large;
-    }
-    .card-img {
-      height: 375px;
-    }
-    ul.radiobuttons {
-      height: 165px;
-    }
-    ul.radiobuttons li {
-        font-size: 24px;
-      }
-      .btn {
-        font-size: x-large;
-        width: 58%;
-      }
-      .reloadbtn {
-        font-size: x-large;
-      }
-    }
-  
-  @media screen and (min-width: 1024px) {
-    .main-container {
-      max-width: 1000px;
-      font-size: x-large;
-    }
-    .card-img {
-      height: 400px;
-    }
-    ul.radiobuttons {
-      height: 180px;
-    }
-    ul.radiobuttons li {
-      font-size: 26px;
-    }
-    .btn {
-      font-size: 30px;
-      width: 38%;
-    }
-    .reloadbtn {
-      font-size: x-large;
-    }
+@media screen and (min-width: 600px) {
+  .main-container {
+    max-width: 700px;
+    font-size: x-large;
   }
+  .card-img {
+    height: 375px;
+  }
+  ul.radiobuttons {
+    height: 165px;
+  }
+  ul.radiobuttons li {
+    font-size: 24px;
+  }
+  .btn {
+    font-size: x-large;
+    width: 58%;
+  }
+  .reloadbtn {
+    font-size: x-large;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-container {
+    max-width: 1000px;
+    font-size: x-large;
+  }
+  .card-img {
+    height: 400px;
+  }
+  ul.radiobuttons {
+    height: 180px;
+  }
+  ul.radiobuttons li {
+    font-size: 26px;
+  }
+  .btn {
+    font-size: 30px;
+    width: 38%;
+  }
+  .reloadbtn {
+    font-size: x-large;
+  }
+}
 
 /* Style "About Us" Page */
 
 .about-title {
- color: whitesmoke;
- position: relative;
- justify-content: flex-start;
- padding:
+  color: whitesmoke;
+  position: absolute;
+  justify-content: flex-start;
 }
 
 /* About us Title , Mobile position */
@@ -427,8 +419,7 @@ ul.radiobuttons li.radio label {
 @media screen and (max-width: 768px) {
   .about-title {
     position: relative;
-}
-  
+  }
 }
 .about-us {
   padding: 20px;
@@ -451,13 +442,10 @@ ul.radiobuttons li.radio label {
   align-items: center;
   margin: 75px;
   background: rgb(60, 202, 207);
-  transition: 1.5s;
-  
-
+  transition: 1s;
 }
 .box:hover {
   height: 40px;
-
 }
 .box .imgBx {
   position: relative;
@@ -471,18 +459,18 @@ ul.radiobuttons li.radio label {
 .box .imgBx img {
   max-width: 100%;
   opacity: 0.6;
-  
+  transform: 1s;
 }
 .box:hover .imgBx img {
   opacity: 0.1;
 }
 .box:before {
-
+  content: "";
   position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
   background: rgb(78, 123, 132);
   filter: blur(60px);
 }
@@ -501,15 +489,11 @@ ul.radiobuttons li.radio label {
   text-align: center;
   opacity: 0;
   transition: 0.5s;
-
 }
 .box:hover .content {
   opacity: 2;
-  
-
 }
 .box .content h2 {
-  
   font-size: 20px;
   color: #fff;
   font-weight: 500;
@@ -524,14 +508,30 @@ ul.radiobuttons li.radio label {
   letter-spacing: 2px;
 }
 .box .content p {
- text-align: center;
-position: absolute;
-font-size: 25px;
-top: 105px;
-left: -5px;
-right: 1px;
-font-weight: 400;
-line-height: 50px;
-letter-spacing: 1px;
-color: whitesmoke;
+  text-align: center;
+  position: absolute;
+  font-size: 25px;
+  top: 105px;
+  left: -5px;
+  right: 1px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: whitesmoke;
+}
+
+.jsbtn {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(15, 159, 162);
+  color: white;
+  font-size: 2rem;
+  margin: 1rem 0 0 40%;
+  box-shadow: 0 5px rgb(195, 141, 246);
+  margin: 50px auto;
+}
+.jsbtn:hover {
+  box-shadow: 0 5px rgb(66, 135, 88);
+  transform: translateY(3px);
 }
