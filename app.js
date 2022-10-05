@@ -13,6 +13,34 @@ const quizData = [
     c: "the richstag",
     correct: "a",
   },
+  {
+    question: "Wwhat is the tallest building in berlin ?",
+    a: "television tower",
+    b: "wild code school campus ",
+    c: "the richstag",
+    correct: "a",
+  },
+  {
+    question: "Wwhat is the tallest building in berlin ?",
+    a: "television tower",
+    b: "wild code school campus ",
+    c: "the richstag",
+    correct: "a",
+  },
+  {
+    question: "Wwhat is the tallest building in berlin ?",
+    a: "television tower",
+    b: "wild code school campus ",
+    c: "the richstag",
+    correct: "a",
+  },
+  {
+    question: "Wwhat is the tallest building in berlin ?",
+    a: "television tower",
+    b: "wild code school campus ",
+    c: "the richstag",
+    correct: "a",
+  },
 ];
 
 /*Grabing all the elements */
@@ -56,27 +84,23 @@ function startquiz() {
     let ans = getSelected();
     if (ans) {
       if (ans == quizData[index].correct) {
-        quizContainer.classList.add("correct");
+        // quizContainer.classList.add("correct");
         score++;
       }
     }
 
     index++;
     if (index < quizData.length) {
-      quizContainer.classList.remove("correct");
+      // quizContainer.classList.remove("correct");
+
       getquiz();
     } else {
-      // change here
-      // alert("score :" + score);
-      // quizContainer.innerHTML = `${score}/${quizData.length}`;
-      // <button onClick="location.reload()">Reload</button>;
+      if (score >= quizData.length - 2) {
+        quizContainer.classList.add("correct");
+      }
+
       quizContainer.innerHTML = `<h2>you scored ${score}/${quizData.length}</h2>
-      <button class="jsbtn" onClick="location.reload()">Reload</button>
-  `;
-      // document
-      //   .createElement("button")
-      //   .addEventListener("click", location.reload());
-      // location.reload();
+      <button class="jsbtn" onClick="location.reload()">Reload</button>`;
     }
   });
 }
