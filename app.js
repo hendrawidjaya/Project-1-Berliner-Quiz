@@ -56,23 +56,27 @@ function startquiz() {
     let ans = getSelected();
     if (ans) {
       if (ans == quizData[index].correct) {
+        quizContainer.classList.add("correct");
         score++;
       }
-      quizContainer.classList.add("correct");
     }
-    if (ans) {
-      if (ans != quizData[index].correct) {
-        quizContainer.classList.add("incorrect");
-        //   score++;
-      }
-    }
+
     index++;
     if (index < quizData.length) {
+      quizContainer.classList.remove("correct");
       getquiz();
     } else {
       // change here
-      alert("score :" + score);
-      location.reload();
+      // alert("score :" + score);
+      // quizContainer.innerHTML = `${score}/${quizData.length}`;
+      // <button onClick="location.reload()">Reload</button>;
+      quizContainer.innerHTML = `<h2>you scored ${score}/${quizData.length}</h2>
+      <button class="jsbtn" onClick="location.reload()">Reload</button>
+  `;
+      // document
+      //   .createElement("button")
+      //   .addEventListener("click", location.reload());
+      // location.reload();
     }
   });
 }
