@@ -237,7 +237,7 @@ div, .button-start {
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 4rem;
-  margin-bottom: 500px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -280,6 +280,7 @@ div, .button-start {
   background-image: url("https://cdn.pixabay.com/photo/2012/06/25/15/41/berlin-wall-50730_960_720.jpg 1x, https://cdn.pixabay.com/photo/2012/06/25/15/41/berlin-wall-50730_1280.jpg");
   height: 200px;
   width: 100%;
+  margin-top: 100px;
 }
 
 /*
