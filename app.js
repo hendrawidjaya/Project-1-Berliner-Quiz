@@ -1,3 +1,5 @@
+// import confetti from "https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.5.1/confetti.js";
+
 const quizData = [
   {
     question: "What is the tallest structure in Berlin?",
@@ -74,6 +76,11 @@ const all_answer = document.querySelectorAll(".answer");
 const quizContainer = document.querySelector(".radiobuttons");
 const cardimage = document.querySelector(".card-img");
 const quizWraper = document.querySelector(".quiz-container");
+const start = () => {
+  setTimeout(function () {
+    confetti.start();
+  });
+};
 
 let index = 0;
 let score = 0;
@@ -131,6 +138,7 @@ function startquiz() {
         question.innerHTML = `<h2> ${score}/${quizData.length} <br>maybe next time </h2>`;
         // quizWraper.style.backgroundColor = "red";
         question.style.backgroundColor = "red";
+        // start();
         // startConfetti();
         // confetti.start();
       }
@@ -143,4 +151,4 @@ getquiz();
 startquiz();
 
 // console.log(btn);
-console.log(confetti.start());
+// console.log(confetti.start());
