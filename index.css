@@ -231,7 +231,7 @@ div,
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 4rem;
-  margin-bottom: 50px;
+  margin-bottom: 500px;
   display: flex;
   justify-content: center;
 }
@@ -396,8 +396,11 @@ ul.radiobuttons li.radio label {
 
 /* About us Title , Mobile position */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
   .about-title {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
     position: relative;
   }
 }
