@@ -1,19 +1,21 @@
 const quizData = [
   {
-    question: "How many opera houses are there in Berlin?",
-    a: "1",
-    b: "2",
-    c: "3",
-    correct: "c",
+    question: "What is the tallest structure in Berlin?",
+    a: "Opera house",
+    b: "TV tower",
+    c: "Olaf Scholz's house",
+    correct: "b",
     cardImage:
-      "https://images.pexels.com/photos/7245305/pexels-photo-7245305.jpeg?cs=srgb&dl=pexels-olga-lioncat-7245305.jpg&fm=jpg",
+      "https://cdn.pixabay.com/photo/2020/01/12/07/49/tv-tower-4759430_640.jpg",
   },
   {
-    question: "How many galleries are there in Berlin?",
-    a: "Around 300 galleries",
-    b: "Around 400 galleries",
-    c: "Around 500 galleries",
-    correct: "a",
+    question: "How many currywursts are eaten in Berlin per year?",
+    a: "50 million",
+    b: "70 million",
+    c: "250 million",
+    correct: "b",
+    cardImage:
+      "https://cdn.pixabay.com/photo/2019/05/26/01/06/currywurst-4229460_640.jpg",
   },
   {
     question: "How old is the world-famous film festival Berlinale?",
@@ -21,27 +23,44 @@ const quizData = [
     b: "74 years this year",
     c: "75 years this year",
     correct: "a",
+    cardImage:
+      "https://asianfilmfestivalscomsite.files.wordpress.com/2021/10/berlinale2022call.png?w=640",
   },
   {
     question: "How many dogs are currently registered in Berlin?",
-    a: ">1000",
-    b: ">1100",
-    c: ">1200",
+    a: "50 000",
+    b: "100 000",
+    c: ">120 000",
     correct: "c",
+    cardImage:
+      "https://cdn.pixabay.com/photo/2017/07/11/18/12/funny-expression-2494538_640.jpg",
   },
   {
-    question: "Which lake is the largest lake in Berlin?",
+    question: "Which lake is the largest in Berlin?",
     a: "Wansee",
     b: "Mugelsee",
     c: "Schlachtensee",
     correct: "b",
+    cardImage:
+      "https://cdn.pixabay.com/photo/2014/09/14/17/24/sailing-boats-445191_640.jpg ",
   },
   {
-    question: "Which house is the tallest?",
-    a: "Your house",
-    b: "Not my house",
-    c: "Olaf Scholz's house",
-    correct: "b",
+    question: "Can you name the youngest elephant in Berlin Zoo?",
+    a: "Anchali ",
+    b: "Aloha",
+    c: "Mia",
+    correct: "a",
+    cardImage:
+      "https://cdn.pixabay.com/photo/2018/09/02/17/25/elephant-3649285_640.jpg",
+  },
+  {
+    question: "How many opera houses are there in Berlin?",
+    a: "1",
+    b: "2",
+    c: "3",
+    correct: "c",
+    cardImage:
+      "https://cdn.pixabay.com/photo/2019/12/22/07/06/berlin-4711919_640.jpg",
   },
 ];
 
@@ -50,7 +69,7 @@ const question = document.getElementById("question");
 const a = document.getElementById("a+");
 const b = document.getElementById("b+");
 const c = document.getElementById("c+");
-const btn = document.querySelector(".btn");
+const btn = document.querySelector(".submit-btn");
 const all_answer = document.querySelectorAll(".answer");
 const quizContainer = document.querySelector(".radiobuttons");
 const cardimage = document.querySelector(".card-img");
@@ -80,8 +99,7 @@ function getquiz() {
   a.innerText = quizData[index].a;
   b.innerText = quizData[index].b;
   c.innerText = quizData[index].c;
-  cardimage.style.backgroundImage =
-    "https://images.pexels.com/photos/7245305/pexels-photo-7245305.jpeg?cs=srgb&dl=pexels-olga-lioncat-7245305.jpg&fm=jpg";
+  cardimage.style.backgroundImage = `url(${quizData[index].cardImage})`;
 }
 //move forward the quiz
 function startquiz() {
@@ -104,8 +122,8 @@ function startquiz() {
         quizContainer.classList.add("correct");
       }
 
-      quizContainer.innerHTML = `<h2>you scored ${score}/${quizData.length}</h2>
-      <button class="jsbtn" onClick="location.reload()">Reload</button>`;
+      quizContainer.innerHTML = `<h2> ${score}/${quizData.length} <br>Congratulations to our Berliner Quiz winner! </h2>
+      <button class="quiz-btn" onClick="location.reload()">Reload</button>`;
     }
   });
 }
