@@ -395,6 +395,7 @@ ul.radiobuttons li.radio label {
     height: 100%;
     padding-bottom: 50px;
     position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* About us Title , Mobile position */
@@ -506,3 +507,29 @@ ul.radiobuttons li.radio label {
   color: whitesmoke;
 }
 
+.footer {
+  padding: 40px 0;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4b4c4d;
+}
+
+.footer .social a {
+  font-size: 25px;
+  color: inherit;
+  
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  text-align: center;
+  border-radius: 15px;
+  padding: 2px 100px;
+  opacity: 0.7s;
+
+}
