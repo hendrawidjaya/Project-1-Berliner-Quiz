@@ -118,12 +118,24 @@ function startquiz() {
 
       getquiz();
     } else {
-      if (score >= quizData.length - 2) {
-        quizContainer.classList.add("correct");
-      }
+      // question.classList.add("hide");
+      // question.innerHTML = `<h2> ${score}/${quizData.length} <br>Congratulations to our Berliner Quiz winner! </h2>
+      // <button class="quiz-btn" onClick="location.reload()">Reload</button>`;
+      if (score > 4) {
+        question.innerHTML = `<h2> ${score}/${quizData.length} <br>You are a true bear!</h2>`;
+        question.style.backgroundColor = "green";
 
-      quizContainer.innerHTML = `<h2> ${score}/${quizData.length} <br>Congratulations to our Berliner Quiz winner! </h2>
-      <button class="quiz-btn" onClick="location.reload()">Reload</button>`;
+        // quizWraper.style.backgroundColor = "green";
+      } else {
+        question.innerHTML = `<h2> ${score}/${quizData.length} <br>You still have a lot to discover!Start Today!</h2>`;
+        // quizWraper.style.backgroundColor = "red";
+        question.style.backgroundColor = "red";
+        // start();
+        // startConfetti();
+        // confetti.start();
+      }
+      // question.innerHTML = `<h2> ${score}/${quizData.length} <br>You are a true bear! </h2>`;
+      quizContainer.innerHTML = `<button class="quiz-btn" onClick="location.reload()">Reload</button>`;
     }
   });
 }
