@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(/assets/berlinbackground.png);
+  background-image: url(assets/berlinbackground.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
