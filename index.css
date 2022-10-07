@@ -30,7 +30,7 @@ body {
 }
 
 .disappear {
-  animation: vanish 3s forwards;
+  animation: vanish 5s forwards;
 }
 @keyframes vanish {
   100% {
