@@ -390,8 +390,11 @@ ul.radiobuttons li.radio label {
 
 .about-title {
   color: whitesmoke;
-  position: absolute;
-  justify-content: flex-start;
+  display: center;
+  width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    position: relative;
 }
 
 /* About us Title , Mobile position */
